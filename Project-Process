@@ -1,0 +1,17 @@
+Configured Apache2 along with subsidiaries like MySQL, MaraiDB PHP, SQL with provide a database and PHP will be used for is used for web developement.
+
+Step 1: Install Ubuntu Server 22.04.
+Step 2: Install Telnet-server, Configure firewall to allow outgoing in incoming traffic on https, https, Telnet, then Telnet into server from client.
+Step 3: Install Apache2
+Step 4: Create new directory with server name (webthinker.com) and populate it with an html file.
+Step 5: Create a webthinker.com.conf file and set perameters to use port 80, set servername and alias, and mark root directory where html files are stored (webthinker.com)
+Step 6: Add website parent folder to Apache2-enabled file (a2ensite webthinker.com.conf) and disable the default file (a2dissite 000-default.conf).
+Step 7: At this point apache2 was running but I could not navigate to the website via IP or domain name. Debugger listed an error on line 255 inside /etc/apache2/apache2.conf file. This file set global parameters so that any /conf file under /var/www/ woud be recongnized.
+        However, there was a syntax error in the line. It read something like "AuthenticateFile /*.conf". I decided to replace this with my actual name of the html file I was using "/webthinker.com.conf". This worked partially, as I could navigate to the folder webthinker.com
+        and it's child files via IP (192.168.1.96/webthinker.com/test.html) and view the file, but could not navigate with the domain name.
+
+$
+$
+$
+$
+
