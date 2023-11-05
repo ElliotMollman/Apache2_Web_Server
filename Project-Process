@@ -1,5 +1,7 @@
 Configured Apache2 along with subsidiaries like MySQL, MaraiDB PHP, SQL with provide a database and PHP will be used for is used for web developement.
-
+#
+#
+#
 Step 1: Install Ubuntu Server 22.04.
 Step 2: Install Telnet-server, Configure firewall to allow outgoing in incoming traffic on https, https, Telnet, then Telnet into server from client.
 Step 3: Install Apache2
@@ -9,9 +11,11 @@ Step 6: Add website parent folder to Apache2-enabled file (a2ensite webthinker.c
 Step 7: At this point apache2 was running but I could not navigate to the website via IP or domain name. Debugger listed an error on line 255 inside /etc/apache2/apache2.conf file. This file set global parameters so that any /conf file under /var/www/ woud be recongnized.
         However, there was a syntax error in the line. It read something like "AuthenticateFile /*.conf". I decided to replace this with my actual name of the html file I was using "/webthinker.com.conf". This worked partially, as I could navigate to the folder webthinker.com
         and it's child files via IP (192.168.1.96/webthinker.com/test.html) and view the file, but could not navigate with the domain name.
-
-$
-$
-$
-$
-
+#
+#
+#
+Connect to drive from windows by using run app. Then type in \\ip address, which is 192.168.1.95 in this case.
+Samba uses ports 139 and 445 TCP, use ufw allow 139 and 445 to allow on firewall.
+#
+#
+—END—
