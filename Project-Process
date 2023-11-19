@@ -14,8 +14,5 @@ Step 7: At this point apache2 was running but I could not navigate to the websit
 #
 #
 #
-Connect to drive from windows by using run app. Then type in \\ip address, which is 192.168.1.95 in this case.
-Samba uses ports 139 and 445 TCP, use ufw allow 139 and 445 to allow on firewall.
-#
 #
 —END—
